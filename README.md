@@ -17,3 +17,25 @@ chmod +x kubebuilder && mv kubebuilder /usr/local/bin/
 
 ```
 
+# Create an API
+```shell
+kubebuilder create api --group webapp --version v1 --kind Guestbook
+
+```
+
+# 
+```shell
+make manifests
+```
+
+
+# Test It Out
+```shell
+make install
+```
+
+```shell
+make run
+```
+
+
