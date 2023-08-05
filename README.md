@@ -17,6 +17,17 @@ chmod +x kubebuilder && mv kubebuilder /usr/local/bin/
 
 ```
 
+---
+
+#  Create a Project
+```shell
+mkdir -p ~/projects/guestbook
+cd ~/projects/guestbook
+kubebuilder init --domain my.domain --repo my.domain/guestbook
+
+```
+
+
 # Create an API
 ```shell
 kubebuilder create api --group webapp --version v1 --kind Guestbook
